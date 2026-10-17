@@ -1,0 +1,2336 @@
+{
+  "users": [
+    {
+      "id": "usr-1",
+      "name": "Meher Abinash",
+      "email": "abinash@example.com",
+      "phone": "+91 98765 43210",
+      "password": "password123",
+      "role": "customer",
+      "createdAt": "2026-10-16T18:47:45.117Z"
+    }
+  ],
+  "admin": {
+    "id": "admin-1",
+    "name": "Store Administrator",
+    "email": "admin@dailyneeds.com",
+    "password": "admin123",
+    "role": "admin",
+    "phone": "+91 98765 00000"
+  },
+  "settings": {
+    "storeName": "Daily Needs Store",
+    "whatsappPhone": "919876543210",
+    "freeDeliveryThreshold": 499,
+    "standardDeliveryFee": 25,
+    "estimatedMinutes": 12
+  },
+  "addresses": [
+    {
+      "id": "addr-1",
+      "userId": "usr-1",
+      "type": "Home",
+      "name": "Meher Abinash",
+      "phone": "+91 98765 43210",
+      "house": "Flat 402, Royal Palms Apartments",
+      "street": "Infocity Road, Patia",
+      "landmark": "Near KIIT Square",
+      "city": "Bhubaneswar",
+      "pincode": "751024",
+      "isDefault": true
+    },
+    {
+      "id": "addr-2",
+      "userId": "usr-1",
+      "type": "Work",
+      "name": "Meher Abinash",
+      "phone": "+91 98765 43210",
+      "house": "Tower B, 4th Floor, DLF Cybercity",
+      "street": "Chandaka Industrial Area",
+      "landmark": "Opposite Infocity Gate",
+      "city": "Bhubaneswar",
+      "pincode": "751024",
+      "isDefault": false
+    }
+  ],
+  "products": [
+    {
+      "id": "rg-1",
+      "name": "Fortune Rozana Super Basmati Rice",
+      "category": "Rice & Grains",
+      "price": 135,
+      "mrp": 175,
+      "unit": "1 kg",
+      "rating": 4.6,
+      "reviewsCount": 1840,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+      "description": "Fluffy, long grain basmati rice perfect for daily biryani, pulao, and steamed rice dishes.",
+      "features": [
+        "Aged for superior aroma",
+        "Slender long grains",
+        "Non-sticky texture"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "rg-2",
+      "name": "Daawat Brown Basmati Rice (Quick Cooking)",
+      "category": "Rice & Grains",
+      "price": 165,
+      "mrp": 210,
+      "unit": "1 kg",
+      "rating": 4.5,
+      "reviewsCount": 920,
+      "stock": 28,
+      "image": "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=600&q=80",
+      "description": "Rich in dietary fiber and nutrients with intact bran layer, cooks in just 15 minutes.",
+      "features": [
+        "Zero cholesterol",
+        "Low Glycemic Index",
+        "Rich in natural fiber"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "rg-3",
+      "name": "Tata Sampann Thick Poha (Flattened Rice)",
+      "category": "Rice & Grains",
+      "price": 58,
+      "mrp": 75,
+      "unit": "500 g",
+      "rating": 4.8,
+      "reviewsCount": 3120,
+      "stock": 60,
+      "image": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80",
+      "description": "High in iron, pristine clean flattened rice for making delicious traditional Kanda Poha.",
+      "features": [
+        "Good source of iron",
+        "No artificial polish",
+        "Soft and non-mushy"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "rg-4",
+      "name": "Rajdhani Roasted Sooji (Rava)",
+      "category": "Rice & Grains",
+      "price": 46,
+      "mrp": 60,
+      "unit": "500 g",
+      "rating": 4.7,
+      "reviewsCount": 1450,
+      "stock": 35,
+      "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=600&q=80",
+      "description": "Evenly granulated semolina, ideal for crispy rava dosas, upma, and sweet halwa.",
+      "features": [
+        "Granular texture",
+        "Made from 100% hard durum wheat",
+        "Pre-cleaned"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "rg-5",
+      "name": "Organic Tattva Wheat Dalia (Broken Wheat)",
+      "category": "Rice & Grains",
+      "price": 65,
+      "mrp": 85,
+      "unit": "500 g",
+      "rating": 4.6,
+      "reviewsCount": 680,
+      "stock": 22,
+      "image": "https://images.unsplash.com/photo-1574316071802-0d684efa7cd5?auto=format&fit=crop&w=600&q=80",
+      "description": "Wholesome high-fiber cracked wheat for savory vegetable khichdi and sweet dalia porridge.",
+      "features": [
+        "Rich in natural fiber",
+        "No chemicals or preservatives",
+        "Easy on digestion"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "rg-6",
+      "name": "Quaker Rolled Oats 100% Wholegrain",
+      "category": "Rice & Grains",
+      "price": 185,
+      "mrp": 230,
+      "unit": "1 kg",
+      "rating": 4.8,
+      "reviewsCount": 4200,
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1517093157656-b9ec81612df3?auto=format&fit=crop&w=600&q=80",
+      "description": "Heart-healthy 100% Australian wholegrain oats that cook in just 3 minutes.",
+      "features": [
+        "Beta-glucan helps lower cholesterol",
+        "High protein & fiber",
+        "Supports weight management"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "rg-7",
+      "name": "Bambino Roasted Vermicelli (Sevai)",
+      "category": "Rice & Grains",
+      "price": 48,
+      "mrp": 62,
+      "unit": "450 g",
+      "rating": 4.7,
+      "reviewsCount": 1890,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80",
+      "description": "Golden roasted fine wheat vermicelli for sweet sheer khurma, kheer, and spicy sevai upma.",
+      "features": [
+        "Golden roasted",
+        "Non-sticky after boiling",
+        "Made from durum wheat semolina"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "rg-8",
+      "name": "Kellogg's Corn Flakes Original & Crispy",
+      "category": "Rice & Grains",
+      "price": 245,
+      "mrp": 310,
+      "unit": "875 g",
+      "rating": 4.8,
+      "reviewsCount": 3890,
+      "stock": 30,
+      "image": "https://images.unsplash.com/photo-1521483451569-e33803c0330c?auto=format&fit=crop&w=600&q=80",
+      "description": "Crispy golden toasted corn flakes enriched with iron and 8 essential vitamins.",
+      "features": [
+        "Naturally cholesterol-free",
+        "Iron + Vitamin B & C enriched",
+        "Extra crispy crunch"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "rg-9",
+      "name": "Kellogg's Real Fruit & Nut Muesli",
+      "category": "Rice & Grains",
+      "price": 380,
+      "mrp": 460,
+      "unit": "750 g",
+      "rating": 4.7,
+      "reviewsCount": 1650,
+      "stock": 25,
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
+      "description": "Power-packed blend of 5 multi-grains with raisins, papaya, cranberries, and California almonds.",
+      "features": [
+        "20% real fruits & nuts",
+        "Multi-grain goodness",
+        "No artificial preservatives"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "af-1",
+      "name": "Aashirvaad Superior MP Sharbati Atta",
+      "category": "Atta & Flour",
+      "price": 260,
+      "mrp": 315,
+      "unit": "5 kg",
+      "rating": 4.9,
+      "reviewsCount": 6540,
+      "stock": 80,
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
+      "description": "100% whole wheat flour made from MP Sharbati golden grains for extra soft rotis that stay tender.",
+      "features": [
+        "0% Maida, 100% Sampoorna Atta",
+        "Soft rotis guaranteed",
+        "Modern 3-step cleaning process"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "af-2",
+      "name": "Aashirvaad Multigrain Atta with 6 Grains",
+      "category": "Atta & Flour",
+      "price": 295,
+      "mrp": 350,
+      "unit": "5 kg",
+      "rating": 4.8,
+      "reviewsCount": 3200,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1574316071802-0d684efa7cd5?auto=format&fit=crop&w=600&q=80",
+      "description": "Nourishing wholesome mix of wheat, soya, chana, oat, maize, and psyllium husk.",
+      "features": [
+        "Rich in dietary fiber",
+        "High plant protein",
+        "Keeps you fuller longer"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "af-3",
+      "name": "Fortune Fine Refined Maida",
+      "category": "Atta & Flour",
+      "price": 45,
+      "mrp": 55,
+      "unit": "1 kg",
+      "rating": 4.6,
+      "reviewsCount": 1420,
+      "stock": 65,
+      "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=600&q=80",
+      "description": "Silky smooth, finely milled all-purpose flour for baking, samosas, puris, and naan.",
+      "features": [
+        "Finely ground",
+        "Pristine white texture",
+        "Free from additives"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "af-4",
+      "name": "Tata Sampann 100% Chana Dal Besan",
+      "category": "Atta & Flour",
+      "price": 78,
+      "mrp": 95,
+      "unit": "500 g",
+      "rating": 4.8,
+      "reviewsCount": 2890,
+      "stock": 55,
+      "image": "https://images.unsplash.com/photo-1596797882870-8c33deeac224?auto=format&fit=crop&w=600&q=80",
+      "description": "Pure unadulterated gram flour made from 100% unpolished chana dal for crispy pakodas and dhokla.",
+      "features": [
+        "100% unpolished chana dal",
+        "Nutty aroma",
+        "Natural yellow color"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "af-5",
+      "name": "Organic Tattva Pure Ragi Flour (Finger Millet)",
+      "category": "Atta & Flour",
+      "price": 72,
+      "mrp": 90,
+      "unit": "500 g",
+      "rating": 4.7,
+      "reviewsCount": 890,
+      "stock": 30,
+      "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=600&q=80",
+      "description": "Calcium-rich gluten-free finger millet flour for nutritious mudde, rotis, and dosa.",
+      "features": [
+        "Super rich in calcium",
+        "Certified gluten-free",
+        "Zero pesticides"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "af-6",
+      "name": "24 Mantra Organic Jowar Flour (Sorghum)",
+      "category": "Atta & Flour",
+      "price": 68,
+      "mrp": 85,
+      "unit": "500 g",
+      "rating": 4.6,
+      "reviewsCount": 640,
+      "stock": 25,
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
+      "description": "Traditional stone-ground jowar flour for soft, diabetic-friendly bhakris.",
+      "features": [
+        "Low glycemic index",
+        "High antioxidant minerals",
+        "100% organic"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "af-7",
+      "name": "Patanjali Bajra Flour (Pearl Millet)",
+      "category": "Atta & Flour",
+      "price": 55,
+      "mrp": 70,
+      "unit": "1 kg",
+      "rating": 4.5,
+      "reviewsCount": 780,
+      "stock": 32,
+      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+      "description": "Warming, wholesome winter millet flour rich in iron and phosphorus for tasty bajra rotis.",
+      "features": [
+        "Rich in iron & zinc",
+        "Promotes gut health",
+        "Traditional stone milled"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "af-8",
+      "name": "Weikfield Fine Cornflour Starch",
+      "category": "Atta & Flour",
+      "price": 38,
+      "mrp": 48,
+      "unit": "200 g",
+      "rating": 4.8,
+      "reviewsCount": 1980,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=600&q=80",
+      "description": "Premium smooth thickening agent for soups, manchurian gravies, and crispy batter coatings.",
+      "features": [
+        "Gluten free",
+        "Smooth lump-free consistency",
+        "Neutral taste"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "dp-1",
+      "name": "Tata Sampann Unpolished Toor / Arhar Dal",
+      "category": "Dal & Pulses",
+      "price": 172,
+      "mrp": 215,
+      "unit": "1 kg",
+      "rating": 4.8,
+      "reviewsCount": 4560,
+      "stock": 65,
+      "image": "https://images.unsplash.com/photo-1596797882870-8c33deeac224?auto=format&fit=crop&w=600&q=80",
+      "description": "Unpolished pigeon pea dal with natural oils retained, cooks quickly with superior taste and aroma.",
+      "features": [
+        "No chemical water polish",
+        "Natural protein retained",
+        "5-step quality checked"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "dp-2",
+      "name": "Fortune Unpolished Yellow Moong Dal",
+      "category": "Dal & Pulses",
+      "price": 148,
+      "mrp": 185,
+      "unit": "1 kg",
+      "rating": 4.7,
+      "reviewsCount": 2310,
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=80",
+      "description": "Light and easy to digest yellow split moong dal, perfect for khichdi and everyday dal tadka.",
+      "features": [
+        "Easily digestible",
+        "Rich in folate and potassium",
+        "Fast boiling"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "dp-3",
+      "name": "Tata Sampann Red Masoor Dal (Split)",
+      "category": "Dal & Pulses",
+      "price": 115,
+      "mrp": 145,
+      "unit": "1 kg",
+      "rating": 4.7,
+      "reviewsCount": 1740,
+      "stock": 42,
+      "image": "https://images.unsplash.com/photo-1596797882870-8c33deeac224?auto=format&fit=crop&w=600&q=80",
+      "description": "Nutritious orange-red split lentils that melt into creamy comfort food within 10 minutes.",
+      "features": [
+        "High iron content",
+        "No synthetic color",
+        "Creamy texture"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "dp-4",
+      "name": "Tata Sampann Unpolished Chana Dal",
+      "category": "Dal & Pulses",
+      "price": 94,
+      "mrp": 120,
+      "unit": "1 kg",
+      "rating": 4.7,
+      "reviewsCount": 1980,
+      "stock": 48,
+      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=80",
+      "description": "Golden split chickpea dal, retaining earthy flavor and high plant-based protein content.",
+      "features": [
+        "Unpolished grains",
+        "Rich in fiber",
+        "Natural nutty flavor"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "dp-5",
+      "name": "Fortune White Urad Dal (Split & Washed)",
+      "category": "Dal & Pulses",
+      "price": 155,
+      "mrp": 190,
+      "unit": "1 kg",
+      "rating": 4.6,
+      "reviewsCount": 1390,
+      "stock": 35,
+      "image": "https://images.unsplash.com/photo-1596797882870-8c33deeac224?auto=format&fit=crop&w=600&q=80",
+      "description": "Clean split white urad dal essential for fluffy idli batter, crispy medu vadas, and dal makhani.",
+      "features": [
+        "Fluffy fermentation results",
+        "Carefully sortex cleaned",
+        "Zero stones"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "dp-6",
+      "name": "Chitra Kashmiri Rajma (Red Kidney Beans)",
+      "category": "Dal & Pulses",
+      "price": 168,
+      "mrp": 210,
+      "unit": "1 kg",
+      "rating": 4.8,
+      "reviewsCount": 2450,
+      "stock": 38,
+      "image": "https://images.unsplash.com/photo-1596797882870-8c33deeac224?auto=format&fit=crop&w=600&q=80",
+      "description": "Tender spotted Kashmiri Chitra kidney beans that soften beautifully for rich North Indian Rajma masala.",
+      "features": [
+        "Melts in the mouth",
+        "Rich in antioxidants",
+        "Authentic Himalayan harvest"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "dp-7",
+      "name": "Tata Sampann Bold Kabuli Chana (Chickpeas)",
+      "category": "Dal & Pulses",
+      "price": 160,
+      "mrp": 198,
+      "unit": "1 kg",
+      "rating": 4.8,
+      "reviewsCount": 2210,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=80",
+      "description": "Large, bold unpolished chickpeas for making classic Punjabi Chole and Mediterranean hummus.",
+      "features": [
+        "Uniform large size",
+        "Even softening on pressure cooking",
+        "High protein"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "dp-8",
+      "name": "Organic Tattva Desi Kala Chana (Black Chickpeas)",
+      "category": "Dal & Pulses",
+      "price": 98,
+      "mrp": 125,
+      "unit": "1 kg",
+      "rating": 4.7,
+      "reviewsCount": 1120,
+      "stock": 30,
+      "image": "https://images.unsplash.com/photo-1596797882870-8c33deeac224?auto=format&fit=crop&w=600&q=80",
+      "description": "Traditional small dark chickpeas ideal for morning sprouts, fasting dishes, and curries.",
+      "features": [
+        "High dietary iron",
+        "Sprouts vigorously",
+        "Pesticide free"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "dp-9",
+      "name": "Nutrela High Protein Soya Chunks",
+      "category": "Dal & Pulses",
+      "price": 52,
+      "mrp": 65,
+      "unit": "200 g",
+      "rating": 4.9,
+      "reviewsCount": 5200,
+      "stock": 75,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
+      "description": "52% plant protein soya chunks with a juicy, tender texture that absorbs aromatic spices.",
+      "features": [
+        "52% vegetarian protein",
+        "0% cholesterol",
+        "Juicy and tender texture"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "og-1",
+      "name": "Fortune Sunlite Refined Sunflower Oil Pouch",
+      "category": "Oil, Ghee & Cooking",
+      "price": 135,
+      "mrp": 165,
+      "unit": "1 L",
+      "rating": 4.7,
+      "reviewsCount": 4120,
+      "stock": 70,
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80",
+      "description": "Light, clear, and fortified with Vitamins A & D, ideal for all everyday frying and sautéing.",
+      "features": [
+        "Light & non-greasy",
+        "Fortified with Vitamin A & D",
+        "High smoke point"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "og-2",
+      "name": "Engine Brand Kachi Ghani Mustard Oil (Sarson)",
+      "category": "Oil, Ghee & Cooking",
+      "price": 158,
+      "mrp": 195,
+      "unit": "1 L",
+      "rating": 4.8,
+      "reviewsCount": 2950,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80",
+      "description": "Cold-pressed pure pungent mustard oil bringing traditional authentic aroma to curries and pickles.",
+      "features": [
+        "Strong natural pungency",
+        "Cold-pressed extraction",
+        "Rich in Omega 3"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "og-3",
+      "name": "Fortune Soya Health Refined Soyabean Oil",
+      "category": "Oil, Ghee & Cooking",
+      "price": 124,
+      "mrp": 150,
+      "unit": "1 L",
+      "rating": 4.6,
+      "reviewsCount": 1840,
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80",
+      "description": "Heart friendly vegetable cooking oil with natural PUFA and essential fatty acids.",
+      "features": [
+        "Contains Omega 3 & 6",
+        "Zero cholesterol",
+        "Fortified with vitamins"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "og-4",
+      "name": "Fortune Vivo Physically Refined Rice Bran Oil",
+      "category": "Oil, Ghee & Cooking",
+      "price": 145,
+      "mrp": 180,
+      "unit": "1 L",
+      "rating": 4.7,
+      "reviewsCount": 1620,
+      "stock": 35,
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80",
+      "description": "Enriched with Oryzanol to help maintain healthy cholesterol levels with high absorption resistance.",
+      "features": [
+        "Rich in Oryzanol",
+        "Absorbs less oil in food",
+        "Physically refined"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "og-5",
+      "name": "Parachute 100% Pure Coconut Cooking Oil",
+      "category": "Oil, Ghee & Cooking",
+      "price": 198,
+      "mrp": 240,
+      "unit": "1 L",
+      "rating": 4.9,
+      "reviewsCount": 3890,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=600&q=80",
+      "description": "Extracted from sun-dried ripe coconuts, untouched by hand, pure aroma for coastal cooking.",
+      "features": [
+        "100% pure & unadulterated",
+        "Multistage filtration",
+        "Grade 1 edible oil"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "og-6",
+      "name": "Amul Pure Desi Ghee Tin",
+      "category": "Oil, Ghee & Cooking",
+      "price": 595,
+      "mrp": 660,
+      "unit": "1 L",
+      "rating": 4.9,
+      "reviewsCount": 7850,
+      "stock": 60,
+      "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80",
+      "description": "Granular golden clarified butter with nostalgic rich aroma made from fresh cow and buffalo milk.",
+      "features": [
+        "Granular (Danedar) texture",
+        "Authentic traditional aroma",
+        "Rich in fat soluble vitamins"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "og-7",
+      "name": "Amul Pasteurised Salted Butter",
+      "category": "Oil, Ghee & Cooking",
+      "price": 275,
+      "mrp": 290,
+      "unit": "500 g",
+      "rating": 4.9,
+      "reviewsCount": 9400,
+      "stock": 75,
+      "image": "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=600&q=80",
+      "description": "The classic 'Utterly Butterly Delicious' creamy salted table butter loved by every Indian home.",
+      "features": [
+        "Rich creamy mouthfeel",
+        "Pure dairy cream",
+        "Iconic taste"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "sm-1",
+      "name": "Tata Salt Vacuum Evaporated Iodised Salt",
+      "category": "Spices & Masala",
+      "price": 28,
+      "mrp": 32,
+      "unit": "1 kg",
+      "rating": 4.9,
+      "reviewsCount": 9800,
+      "stock": 120,
+      "image": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=600&q=80",
+      "description": "Desh Ka Namak. Pure white vacuum evaporated salt with optimal iodine content for mental sharpness.",
+      "features": [
+        "Vacuum evaporated purity",
+        "Guaranteed iodine balance",
+        "Free flowing crystals"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "sm-2",
+      "name": "Madhur Pure & Hygienic Sulphurless Sugar",
+      "category": "Spices & Masala",
+      "price": 54,
+      "mrp": 65,
+      "unit": "1 kg",
+      "rating": 4.8,
+      "reviewsCount": 3600,
+      "stock": 85,
+      "image": "https://images.unsplash.com/photo-1622484214149-a29d10e5aa24?auto=format&fit=crop&w=600&q=80",
+      "description": "Sparkling crystal sugar refined using 100% sulphur-free process, untouched by hands.",
+      "features": [
+        "100% sulphurless process",
+        "Sparkling clear crystals",
+        "Hygienically machine packed"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "sm-3",
+      "name": "Catch Pure Turmeric (Haldi) Powder",
+      "category": "Spices & Masala",
+      "price": 52,
+      "mrp": 65,
+      "unit": "200 g",
+      "rating": 4.7,
+      "reviewsCount": 2150,
+      "stock": 60,
+      "image": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80",
+      "description": "High curcumin content turmeric powder sourced from prime Salem farms for vibrant yellow color.",
+      "features": [
+        "High natural Curcumin",
+        "Low temperature ground",
+        "Zero synthetic color"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "sm-4",
+      "name": "Everest Tikhalal Red Chilli Powder",
+      "category": "Spices & Masala",
+      "price": 68,
+      "mrp": 82,
+      "unit": "200 g",
+      "rating": 4.8,
+      "reviewsCount": 3400,
+      "stock": 55,
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+      "description": "Sizzling fiery red chilli powder that imparts radiant crimson color and fiery heat to curries.",
+      "features": [
+        "Rich fiery red hue",
+        "Authentic pungent kick",
+        "Sun-dried selected chillies"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "sm-5",
+      "name": "Catch Coriander (Dhaniya) Powder",
+      "category": "Spices & Masala",
+      "price": 49,
+      "mrp": 60,
+      "unit": "200 g",
+      "rating": 4.6,
+      "reviewsCount": 1400,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+      "description": "Freshly roasted and cold ground coriander seeds giving rich aroma and earthy thickness to gravy.",
+      "features": [
+        "Cold ground process",
+        "Fresh earthy fragrance",
+        "Sealed freshness pack"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "sm-6",
+      "name": "Everest Royal Garam Masala Blend",
+      "category": "Spices & Masala",
+      "price": 88,
+      "mrp": 105,
+      "unit": "100 g",
+      "rating": 4.9,
+      "reviewsCount": 4200,
+      "stock": 65,
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+      "description": "Master blend of 13 roasted exotic spices including cinnamon, cloves, mace, and cardamom.",
+      "features": [
+        "13 royal whole spices",
+        "Intense warm aroma",
+        "Small pinch goes a long way"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "sm-7",
+      "name": "MDH Kitchen King Masala",
+      "category": "Spices & Masala",
+      "price": 82,
+      "mrp": 98,
+      "unit": "100 g",
+      "rating": 4.8,
+      "reviewsCount": 3100,
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+      "description": "The versatile curry powder that turns everyday paneer and vegetable dishes restaurant style.",
+      "features": [
+        "All-in-one curry spice",
+        "Rich golden gravy color",
+        "Classic heritage formulation"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "sm-8",
+      "name": "Catch Shahi Biryani Masala",
+      "category": "Spices & Masala",
+      "price": 76,
+      "mrp": 92,
+      "unit": "100 g",
+      "rating": 4.7,
+      "reviewsCount": 1850,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+      "description": "Authentic royal Awadhi blend with whole star anise, green cardamom, and bay leaves.",
+      "features": [
+        "Whole spice extracts included",
+        "Intense festive aroma",
+        "Perfect for dum biryani"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "sm-9",
+      "name": "Catch Compounded Asafoetida (Hing)",
+      "category": "Spices & Masala",
+      "price": 65,
+      "mrp": 80,
+      "unit": "50 g",
+      "rating": 4.8,
+      "reviewsCount": 1950,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=600&q=80",
+      "description": "Pungent natural digestive spice essential for tadka in lentils, sambar, and rasam.",
+      "features": [
+        "Strong digestive properties",
+        "Air-tight flip-top canister",
+        "Authentic strong aroma"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "tcb-1",
+      "name": "Red Label Natural Care Ayurvedic Tea",
+      "category": "Tea, Coffee & Beverages",
+      "price": 295,
+      "mrp": 360,
+      "unit": "500 g",
+      "rating": 4.8,
+      "reviewsCount": 4890,
+      "stock": 55,
+      "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80",
+      "description": "Black tea infused with 5 Ayurvedic herbs: Tulsi, Ashwagandha, Mulethi, Ginger, and Cardamom.",
+      "features": [
+        "Clinically proven to enhance immunity",
+        "Strong taste and rich red liquor",
+        "Natural herbal aroma"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "tcb-2",
+      "name": "Tata Tea Gold Fine Long Leaf CTC",
+      "category": "Tea, Coffee & Beverages",
+      "price": 285,
+      "mrp": 340,
+      "unit": "500 g",
+      "rating": 4.8,
+      "reviewsCount": 3600,
+      "stock": 48,
+      "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80",
+      "description": "Exquisite blend of rich Assam CTC tea with 15% gently rolled long tea leaves for irresistible aroma.",
+      "features": [
+        "15% long tea leaves",
+        "Unmatched aroma & strength",
+        "Grown in high elevation valleys"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "tcb-3",
+      "name": "Tetley Pure Green Tea Bags with Antioxidants",
+      "category": "Tea, Coffee & Beverages",
+      "price": 185,
+      "mrp": 230,
+      "unit": "100 Bags",
+      "rating": 4.7,
+      "reviewsCount": 2190,
+      "stock": 35,
+      "image": "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=600&q=80",
+      "description": "Smooth refreshing green tea loaded with 5x antioxidants to detoxify your system.",
+      "features": [
+        "5x natural antioxidants",
+        "Zero calories without milk/sugar",
+        "Staple-free tea bags"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "tcb-4",
+      "name": "Nescafé Classic 100% Pure Instant Coffee",
+      "category": "Tea, Coffee & Beverages",
+      "price": 330,
+      "mrp": 395,
+      "unit": "100 g Glass Jar",
+      "rating": 4.9,
+      "reviewsCount": 6100,
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80",
+      "description": "Bold roasted Robusta beans creating unmistakable rich coffee aroma and frothy cream.",
+      "features": [
+        "100% pure roasted coffee",
+        "Signature frothy blend",
+        "Aroma seal lock glass jar"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "tcb-5",
+      "name": "Cadbury Bournvita Chocolate Health Drink",
+      "category": "Tea, Coffee & Beverages",
+      "price": 385,
+      "mrp": 440,
+      "unit": "1 kg Jar",
+      "rating": 4.8,
+      "reviewsCount": 4300,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=600&q=80",
+      "description": "Fortified chocolate drink mix with Vitamin D, Iron, and Calcium supporting strength and immunity.",
+      "features": [
+        "Inner strength formula",
+        "Rich malted chocolate taste",
+        "Fortified with Vitamin D & Zinc"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "tcb-6",
+      "name": "Real Fruit Power 100% Mixed Fruit Juice",
+      "category": "Tea, Coffee & Beverages",
+      "price": 110,
+      "mrp": 130,
+      "unit": "1 L",
+      "rating": 4.7,
+      "reviewsCount": 3100,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=600&q=80",
+      "description": "Refreshing medley of 9 handpicked fruits packed with Vitamin C and natural nourishment.",
+      "features": [
+        "No added preservatives",
+        "Rich in natural Vitamin C",
+        "Aseptic 6-layer Tetra Pak"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "tcb-7",
+      "name": "Kinley Packaged Drinking Water (Sodium Balanced)",
+      "category": "Tea, Coffee & Beverages",
+      "price": 20,
+      "mrp": 20,
+      "unit": "1 L",
+      "rating": 4.9,
+      "reviewsCount": 8200,
+      "stock": 150,
+      "image": "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80",
+      "description": "Pure and safe packaged drinking water purified through a rigorous 10-step filtration process.",
+      "features": [
+        "10-step RO + UV purification",
+        "Enriched with essential minerals",
+        "Food grade PET bottle"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "bs-1",
+      "name": "Parle-G Original Gluco Biscuits (Super Saver Pack)",
+      "category": "Biscuits & Snacks",
+      "price": 75,
+      "mrp": 90,
+      "unit": "800 g",
+      "rating": 4.9,
+      "reviewsCount": 11200,
+      "stock": 100,
+      "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=600&q=80",
+      "description": "India's beloved glucose biscuit with classic taste of wheat and milk, ideal chai companion.",
+      "features": [
+        "Instant glucose energy",
+        "Milk & wheat goodness",
+        "Timeless favorite taste"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "bs-2",
+      "name": "Britannia Marie Gold Crisp Tea Biscuits",
+      "category": "Biscuits & Snacks",
+      "price": 45,
+      "mrp": 55,
+      "unit": "300 g",
+      "rating": 4.7,
+      "reviewsCount": 4200,
+      "stock": 65,
+      "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+      "description": "Light and crunchy low fat tea-time biscuits infused with 10 essential vitamins and minerals.",
+      "features": [
+        "Crisp & crunchy bite",
+        "Low in trans fat",
+        "Fortified with 10 vitamins"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "bs-3",
+      "name": "Haldiram's Nagpur Aloo Bhujia Namkeen",
+      "category": "Biscuits & Snacks",
+      "price": 95,
+      "mrp": 115,
+      "unit": "400 g",
+      "rating": 4.9,
+      "reviewsCount": 6500,
+      "stock": 75,
+      "image": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=600&q=80",
+      "description": "Crispy potato and tepary bean mint noodles tossed in spicy signature Indian seasonings.",
+      "features": [
+        "Authentic Bikaneri recipe",
+        "Crunchy minty kick",
+        "Zero trans fat"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "bs-4",
+      "name": "Lay's India's Magic Masala Potato Chips",
+      "category": "Biscuits & Snacks",
+      "price": 20,
+      "mrp": 20,
+      "unit": "50 g",
+      "rating": 4.8,
+      "reviewsCount": 7800,
+      "stock": 110,
+      "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+      "description": "Thin cut crispy fried potatoes seasoned with an irresistible burst of Indian exotic spices.",
+      "features": [
+        "100% farm quality potatoes",
+        "Signature blue pack flavor",
+        "Ultra crisp crunch"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "bs-5",
+      "name": "Kurkure Masala Munch Crunchy Snack",
+      "category": "Biscuits & Snacks",
+      "price": 20,
+      "mrp": 20,
+      "unit": "75 g",
+      "rating": 4.8,
+      "reviewsCount": 5400,
+      "stock": 90,
+      "image": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=600&q=80",
+      "description": "Tedha hai par mera hai! Crispy spiced corn curls loaded with chatpata masala flavour.",
+      "features": [
+        "Chatpata spices",
+        "Made with rice, corn & gram",
+        "No artificial colors"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "bs-6",
+      "name": "Cadbury Dairy Milk Silk Chocolate Bar",
+      "category": "Biscuits & Snacks",
+      "price": 165,
+      "mrp": 180,
+      "unit": "150 g",
+      "rating": 4.9,
+      "reviewsCount": 8900,
+      "stock": 60,
+      "image": "https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=600&q=80",
+      "description": "Rich, smooth and creamy melt-in-mouth milk chocolate crafted for pure indulgence.",
+      "features": [
+        "Silky smooth texture",
+        "100% sustainably sourced cocoa",
+        "Pure milk chocolate"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "bs-7",
+      "name": "Happilo Premium California Almonds (Badam)",
+      "category": "Biscuits & Snacks",
+      "price": 245,
+      "mrp": 325,
+      "unit": "250 g",
+      "rating": 4.8,
+      "reviewsCount": 3120,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1508061252966-f72fb982aef4?auto=format&fit=crop&w=600&q=80",
+      "description": "Crunchy, raw jumbo California almonds rich in Vitamin E, dietary fiber, and healthy fats.",
+      "features": [
+        "Zero cholesterol",
+        "High plant protein",
+        "Gluten-free & non-GMO"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "br-1",
+      "name": "Maggi 2-Minute Masala Instant Noodles (Pack of 12)",
+      "category": "Breakfast & Ready Food",
+      "price": 155,
+      "mrp": 168,
+      "unit": "840 g (12x70g)",
+      "rating": 4.9,
+      "reviewsCount": 12500,
+      "stock": 95,
+      "image": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80",
+      "description": "India's favorite comfort meal crafted with signature roasted tastemaker spices and quality wheat.",
+      "features": [
+        "Cooks in 2 minutes",
+        "Fortified with Iron",
+        "Signature 10-spice tastemaker"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "br-2",
+      "name": "Modern 100% Whole Wheat Brown Bread",
+      "category": "Breakfast & Ready Food",
+      "price": 45,
+      "mrp": 50,
+      "unit": "400 g",
+      "rating": 4.6,
+      "reviewsCount": 2890,
+      "stock": 35,
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
+      "description": "Freshly baked high fiber brown loaf, baked daily without maida or artificial colors.",
+      "features": [
+        "100% whole wheat",
+        "Zero cholesterol",
+        "Soft pillowy slices"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "br-3",
+      "name": "Kissan Mixed Fruit Jam",
+      "category": "Breakfast & Ready Food",
+      "price": 145,
+      "mrp": 175,
+      "unit": "500 g Glass Jar",
+      "rating": 4.8,
+      "reviewsCount": 3900,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80",
+      "description": "Luscious fruit jam crafted with pulp of 8 seasonal fruits for spreading over rotis and toast.",
+      "features": [
+        "8 fruit pulps combined",
+        "Easy spread consistency",
+        "Kid approved taste"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "br-4",
+      "name": "Pintola All-Natural Creamy Peanut Butter",
+      "category": "Breakfast & Ready Food",
+      "price": 299,
+      "mrp": 375,
+      "unit": "1 kg",
+      "rating": 4.9,
+      "reviewsCount": 4600,
+      "stock": 35,
+      "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80",
+      "description": "100% roasted bold peanuts without added sugar, hydrogenated oils, or preservatives.",
+      "features": [
+        "30g protein per 100g",
+        "0% added sugar or salt",
+        "100% roasted peanuts only"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "br-5",
+      "name": "Dabur 100% Pure Squeezy Honey",
+      "category": "Breakfast & Ready Food",
+      "price": 199,
+      "mrp": 245,
+      "unit": "400 g Squeezy Pack",
+      "rating": 4.8,
+      "reviewsCount": 4100,
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80",
+      "description": "NMR tested 100% pure Himalayan honey, completely free of adulterants and sugar syrup.",
+      "features": [
+        "100% pure & NMR tested",
+        "No sugar adulteration",
+        "Easy no-drip squeezy bottle"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "br-6",
+      "name": "Maggi Rich Tomato Ketchup Bottle",
+      "category": "Breakfast & Ready Food",
+      "price": 115,
+      "mrp": 135,
+      "unit": "1 kg",
+      "rating": 4.7,
+      "reviewsCount": 3800,
+      "stock": 55,
+      "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80",
+      "description": "Tangy sweet ketchup made from sun-ripened vine tomatoes and mild aromatic spices.",
+      "features": [
+        "Made with plump tomatoes",
+        "Classic tangy-sweet balance",
+        "Easy grip bottle"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "br-7",
+      "name": "Mother's Recipe Traditional Mango Pickle",
+      "category": "Breakfast & Ready Food",
+      "price": 125,
+      "mrp": 155,
+      "unit": "500 g Jar",
+      "rating": 4.7,
+      "reviewsCount": 2400,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80",
+      "description": "Traditional raw green mango pieces cured in mustard oil and handpicked pungent spices.",
+      "features": [
+        "Sun cured authenticity",
+        "Pure mustard oil base",
+        "No artificial color"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "dr-1",
+      "name": "Amul Taaza Homogenised Toned Milk Pouch",
+      "category": "Dairy & Refrigerated",
+      "price": 27,
+      "mrp": 27,
+      "unit": "500 ml",
+      "rating": 4.9,
+      "reviewsCount": 15400,
+      "stock": 140,
+      "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+      "description": "Pasteurised toned milk with 3.0% fat and 8.5% SNF, delivering fresh nourishment daily.",
+      "features": [
+        "Fresh morning batch",
+        "Rich in natural calcium",
+        "No boiling needed"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "dr-2",
+      "name": "Amul Masti Thick Spiced Buttermilk / Curd Tub",
+      "category": "Dairy & Refrigerated",
+      "price": 35,
+      "mrp": 35,
+      "unit": "400 g",
+      "rating": 4.8,
+      "reviewsCount": 4200,
+      "stock": 80,
+      "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+      "description": "Thick, creamy set dahi prepared from pasteurised milk, rich in active gut probiotics.",
+      "features": [
+        "Thick set curd",
+        "Probiotic cultures",
+        "Naturally sweet flavor"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "dr-3",
+      "name": "Amul Fresh Malai Paneer Block",
+      "category": "Dairy & Refrigerated",
+      "price": 92,
+      "mrp": 95,
+      "unit": "200 g",
+      "rating": 4.9,
+      "reviewsCount": 6800,
+      "stock": 65,
+      "image": "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=600&q=80",
+      "description": "Soft, spongy malai cottage cheese cubes that absorb marinades and gravies like a dream.",
+      "features": [
+        "Ultra soft & spongy",
+        "Rich in dairy protein",
+        "Vacuum sealed fresh block"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "dr-4",
+      "name": "Amul Processed Cheese Slices (Pack of 10)",
+      "category": "Dairy & Refrigerated",
+      "price": 142,
+      "mrp": 150,
+      "unit": "200 g (10 Slices)",
+      "rating": 4.8,
+      "reviewsCount": 3900,
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=600&q=80",
+      "description": "Individually wrapped creamy cheese slices that melt evenly on sandwiches and burgers.",
+      "features": [
+        "Quick melting",
+        "Individually wrapped for hygiene",
+        "Rich in calcium & protein"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "dr-5",
+      "name": "Mother Dairy Rich Fresh Cream",
+      "category": "Dairy & Refrigerated",
+      "price": 68,
+      "mrp": 72,
+      "unit": "250 ml",
+      "rating": 4.7,
+      "reviewsCount": 1650,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+      "description": "Smooth, velvety low-fat fresh cream for rich makhani gravies, fruit salads, and desserts.",
+      "features": [
+        "Velvety smooth texture",
+        "25% low milk fat",
+        "Ideal for cooking and whipping"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "dr-6",
+      "name": "Kwality Wall's Chocolate Hazelnut Ice Cream Tub",
+      "category": "Dairy & Refrigerated",
+      "price": 199,
+      "mrp": 250,
+      "unit": "700 ml Tub",
+      "rating": 4.8,
+      "reviewsCount": 2900,
+      "stock": 30,
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80",
+      "description": "Creamy chocolate frozen dessert loaded with roasted hazelnut bits and chocolate drizzle.",
+      "features": [
+        "Rich Belgian chocolate swirl",
+        "Crunchy roasted nuts",
+        "Stored in thermal chill boxes"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "pc-1",
+      "name": "Dettol Original Germ Protection Bathing Soap (Buy 4 Get 1)",
+      "category": "Personal Care",
+      "price": 175,
+      "mrp": 215,
+      "unit": "Pack of 5 (125g each)",
+      "rating": 4.9,
+      "reviewsCount": 7400,
+      "stock": 85,
+      "image": "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=600&q=80",
+      "description": "Trusted germ protection soap formulated with pure pine fragrance and nourishing moisturizers.",
+      "features": [
+        "99.9% germ protection",
+        "Grade 1 soap with 76% TFM",
+        "Trusted by doctors"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "pc-2",
+      "name": "Dettol Skincare Liquid Handwash Pump",
+      "category": "Personal Care",
+      "price": 99,
+      "mrp": 125,
+      "unit": "200 ml Dispenser",
+      "rating": 4.8,
+      "reviewsCount": 5100,
+      "stock": 70,
+      "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80",
+      "description": "Enriched with added glycerin and gentle floral aroma to keep hands soft and germ-free.",
+      "features": [
+        "Antibacterial efficacy",
+        "pH-balanced moisturizing formula",
+        "Smooth pump dispenser"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "pc-3",
+      "name": "Head & Shoulders Cool Menthol Anti-Dandruff Shampoo",
+      "category": "Personal Care",
+      "price": 299,
+      "mrp": 375,
+      "unit": "340 ml",
+      "rating": 4.8,
+      "reviewsCount": 4200,
+      "stock": 55,
+      "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80",
+      "description": "Infused with cooling menthol crystals to eliminate 100% visible dandruff flakes and itchiness.",
+      "features": [
+        "Up to 100% flake free hair",
+        "Invigorating icy cool feel",
+        "Gentle for daily use"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "pc-4",
+      "name": "Colgate Total 120g Advanced Whole Mouth Health",
+      "category": "Personal Care",
+      "price": 110,
+      "mrp": 135,
+      "unit": "120 g",
+      "rating": 4.8,
+      "reviewsCount": 6800,
+      "stock": 80,
+      "image": "https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=600&q=80",
+      "description": "Dual zinc plus arginine formula that fights bacteria on teeth, tongue, cheeks, and gums for 12 hours.",
+      "features": [
+        "12-hour antibacterial defense",
+        "Fights plaque & cavities",
+        "Long-lasting fresh breath"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "pc-5",
+      "name": "Oral-B Pro-Health CrossAction Soft Toothbrush (Pack of 4)",
+      "category": "Personal Care",
+      "price": 140,
+      "mrp": 180,
+      "unit": "Pack of 4",
+      "rating": 4.7,
+      "reviewsCount": 3100,
+      "stock": 60,
+      "image": "https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=600&q=80",
+      "description": "CrissCross bristles angled at 16 degrees to attack plaque along the gumline with tongue cleaner.",
+      "features": [
+        "16-degree angled bristles",
+        "Soft on sensitive gums",
+        "Built-in cheek & tongue scraper"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "pc-6",
+      "name": "Nivea Soft Light Moisturising Cream",
+      "category": "Personal Care",
+      "price": 185,
+      "mrp": 235,
+      "unit": "200 ml Jar",
+      "rating": 4.8,
+      "reviewsCount": 4500,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+      "description": "Lightweight, non-greasy formula with Jojoba Oil and Vitamin E for instant refreshing softness.",
+      "features": [
+        "Quick absorbing light texture",
+        "Enriched with Jojoba Oil & Vit E",
+        "For face, body & hands"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "pc-7",
+      "name": "Whisper Ultra Clean Sanitary Pads XL+ Wings",
+      "category": "Personal Care",
+      "price": 245,
+      "mrp": 299,
+      "unit": "30 Pads",
+      "rating": 4.9,
+      "reviewsCount": 8900,
+      "stock": 75,
+      "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80",
+      "description": "Extra-long wings with lock-gel core to absorb fluids within seconds for leak-free protection.",
+      "features": [
+        "Lock-gel core technology",
+        "Delightful odor lock scent",
+        "Dri-weave top sheet"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "pc-8",
+      "name": "Gillette Mach3 Razor with 2 Cartridges",
+      "category": "Personal Care",
+      "price": 280,
+      "mrp": 350,
+      "unit": "1 Razor + 2 Blades",
+      "rating": 4.8,
+      "reviewsCount": 3400,
+      "stock": 35,
+      "image": "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=600&q=80",
+      "description": "3 stronger-than-steel blades that stay sharper longer for a smooth, irritation-free shave.",
+      "features": [
+        "3 DuraComfort blades",
+        "Lubrastrip glide strip",
+        "Ergonomic weighted handle"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "hc-1",
+      "name": "Surf Excel Matic Front Load Liquid Detergent Pouch",
+      "category": "Household Cleaning",
+      "price": 240,
+      "mrp": 295,
+      "unit": "1 L Pouch",
+      "rating": 4.9,
+      "reviewsCount": 8100,
+      "stock": 90,
+      "image": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+      "description": "Fast-dissolving concentrated liquid formula designed to remove tough stains inside washing machines.",
+      "features": [
+        "Dissolves completely in water",
+        "Superior stain penetration",
+        "Safe on colors & fabrics"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "hc-2",
+      "name": "Vim Lemon Dishwash Liquid Gel Can",
+      "category": "Household Cleaning",
+      "price": 155,
+      "mrp": 195,
+      "unit": "750 ml Bottle",
+      "rating": 4.8,
+      "reviewsCount": 7200,
+      "stock": 80,
+      "image": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+      "description": "Power of 100 lemons in 1 drop to cut through stubborn grease on stainless steel and non-stick cookware.",
+      "features": [
+        "Cuts thick oil & burnt food",
+        "Leaves no white residue",
+        "Pleasant fresh lemon scent"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "hc-3",
+      "name": "Lizol Citrus Floral Disinfectant Surface Floor Cleaner",
+      "category": "Household Cleaning",
+      "price": 185,
+      "mrp": 225,
+      "unit": "1 L Bottle",
+      "rating": 4.8,
+      "reviewsCount": 5600,
+      "stock": 75,
+      "image": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+      "description": "Triple action formula that kills 99.9% germs, lifts stubborn dust, and leaves long-lasting fragrance.",
+      "features": [
+        "10x better germ kill than phenyl",
+        "Safe for marble & granite tiles",
+        "Refreshing citrus scent"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "hc-4",
+      "name": "Harpic Power Plus Original Disinfectant Toilet Cleaner",
+      "category": "Household Cleaning",
+      "price": 165,
+      "mrp": 200,
+      "unit": "1 L Bottle",
+      "rating": 4.9,
+      "reviewsCount": 6900,
+      "stock": 85,
+      "image": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+      "description": "Thick blue liquid clings to the bowl to eliminate yellowish limescale stains and kill 99.9% germs.",
+      "features": [
+        "Thick formula clings to bowl",
+        "Removes stubborn limescale",
+        "Kills 99.9% germs"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "hc-5",
+      "name": "Colin Glass and Multi-Surface Cleaner Spray",
+      "category": "Household Cleaning",
+      "price": 95,
+      "mrp": 120,
+      "unit": "500 ml Trigger Spray",
+      "rating": 4.7,
+      "reviewsCount": 3800,
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+      "description": "Streak-free shine formula for glass windows, mirrors, car windscreens, and refrigerator doors.",
+      "features": [
+        "Streak-free shine",
+        "Shine boosters",
+        "Easy trigger spray mechanism"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "hc-6",
+      "name": "Scotch-Brite Heavy Duty Scrub Sponge (Pack of 3)",
+      "category": "Household Cleaning",
+      "price": 85,
+      "mrp": 105,
+      "unit": "Pack of 3",
+      "rating": 4.8,
+      "reviewsCount": 4200,
+      "stock": 60,
+      "image": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+      "description": "Thick cellulose sponge with abrasive green scrub layer to clean burnt kadhais without scratching.",
+      "features": [
+        "High absorption foam",
+        "Long-lasting abrasive pad",
+        "Stays odor free"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "hc-7",
+      "name": "Godrej aer Pocket Bathroom Air Freshener Gel (Lavender)",
+      "category": "Household Cleaning",
+      "price": 65,
+      "mrp": 75,
+      "unit": "10 g Pouch",
+      "rating": 4.6,
+      "reviewsCount": 2900,
+      "stock": 65,
+      "image": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80",
+      "description": "Unique power gel technology that keeps your bathroom smelling floral fresh for up to 30 days.",
+      "features": [
+        "Lasts up to 30 days",
+        "Slim hook design",
+        "Soothing lavender aroma"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "kh-1",
+      "name": "Freshwrapp Heavy Duty Food Grade Aluminium Foil",
+      "category": "Kitchen & Household Items",
+      "price": 189,
+      "mrp": 235,
+      "unit": "18 m Roll",
+      "rating": 4.8,
+      "reviewsCount": 3400,
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&q=80",
+      "description": "11 micron thick food safe foil keeping chapatis, sandwiches, and parathas hot and soft.",
+      "features": [
+        "100% food grade aluminium",
+        "Locks aroma and warmth",
+        "Tear-resistant cutter edge"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "kh-2",
+      "name": "Origami So Soft 2-Ply Kitchen Paper Towel Rolls",
+      "category": "Kitchen & Household Items",
+      "price": 110,
+      "mrp": 140,
+      "unit": "Pack of 2 Rolls",
+      "rating": 4.7,
+      "reviewsCount": 2200,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&w=600&q=80",
+      "description": "Highly absorbent 2-ply embossed paper towels to blot excess oil from fried snacks instantly.",
+      "features": [
+        "Extra oil absorbent",
+        "100% virgin pulp fiber",
+        "Perforated tear sheets"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "kh-3",
+      "name": "All Out Ultra Power+ Mosquito Liquid Vaporizer Refill",
+      "category": "Kitchen & Household Items",
+      "price": 85,
+      "mrp": 99,
+      "unit": "45 ml Twin Refill",
+      "rating": 4.8,
+      "reviewsCount": 5100,
+      "stock": 70,
+      "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80",
+      "description": "Advanced knockdown formula that spreads quickly to ensure total peace from biting mosquitoes.",
+      "features": [
+        "Wide room coverage",
+        "Kills dengue mosquitoes",
+        "Fits all standard machines"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "kh-4",
+      "name": "Duracell Ultra Alkaline AA Batteries",
+      "category": "Kitchen & Household Items",
+      "price": 150,
+      "mrp": 180,
+      "unit": "Pack of 4",
+      "rating": 4.9,
+      "reviewsCount": 4100,
+      "stock": 55,
+      "image": "https://images.unsplash.com/photo-1619725002198-6a689b72f41d?auto=format&fit=crop&w=600&q=80",
+      "description": "Long-lasting power with Duralock Power Preserve technology for remote controls and toys.",
+      "features": [
+        "Up to 100% more power",
+        "Leakage prevention guarantee",
+        "10-year shelf life"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "kh-5",
+      "name": "Oxo-Biodegradable Drawstring Garbage Bags (Medium 19x21)",
+      "category": "Kitchen & Household Items",
+      "price": 125,
+      "mrp": 160,
+      "unit": "30 Bags Roll",
+      "rating": 4.7,
+      "reviewsCount": 2800,
+      "stock": 60,
+      "image": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+      "description": "Tough leak-proof black dustbin bags with tie strings for easy, hygienic waste disposal.",
+      "features": [
+        "Oxo-biodegradable material",
+        "Drawstring tie for easy lifting",
+        "Puncture-resistant seal"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "kh-6",
+      "name": "Kitchen Gas Lighter with Free Gas Knife",
+      "category": "Kitchen & Household Items",
+      "price": 99,
+      "mrp": 149,
+      "unit": "1 Pc",
+      "rating": 4.6,
+      "reviewsCount": 1600,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&w=600&q=80",
+      "description": "Stainless steel spark lighter with comfortable grip for swift, effortless gas stove ignition.",
+      "features": [
+        "100% stainless steel body",
+        "Continuous instant spark",
+        "Corrosion resistant"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "bp-1",
+      "name": "Pampers All round Protection Baby Diaper Pants (Large)",
+      "category": "Baby Products",
+      "price": 899,
+      "mrp": 1099,
+      "unit": "54 Pants (9-14 kg)",
+      "rating": 4.9,
+      "reviewsCount": 8200,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=600&q=80",
+      "description": "Anti-rash blanket lotion with Magic Gel lock keeping infant bottoms dry for up to 12 hours.",
+      "features": [
+        "12-hour dry lock technology",
+        "Enriched with Aloe Vera lotion",
+        "360-degree soft stretchy waistband"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "bp-2",
+      "name": "Himalaya Gentle Baby Wipes with Aloe & Lotus",
+      "category": "Baby Products",
+      "price": 145,
+      "mrp": 195,
+      "unit": "72 Wipes Flip Top",
+      "rating": 4.8,
+      "reviewsCount": 6100,
+      "stock": 65,
+      "image": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=600&q=80",
+      "description": "Hypoallergenic alcohol-free baby wipes enriched with Indian Lotus and Aloe soothing extracts.",
+      "features": [
+        "Alcohol & paraben free",
+        "pH balanced gentle formula",
+        "Protects against diaper rashes"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "bp-3",
+      "name": "Johnson's No More Tears Baby Shampoo",
+      "category": "Baby Products",
+      "price": 215,
+      "mrp": 275,
+      "unit": "200 ml",
+      "rating": 4.8,
+      "reviewsCount": 3900,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=600&q=80",
+      "description": "Tear-free gentle formula as gentle to baby's eyes as pure water, leaving fine hair shiny and clean.",
+      "features": [
+        "No More Tears formula",
+        "100% soap-free",
+        "Pediatrician recommended"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "bp-4",
+      "name": "Himalaya Nourishing Baby Massage Oil",
+      "category": "Baby Products",
+      "price": 180,
+      "mrp": 220,
+      "unit": "200 ml",
+      "rating": 4.8,
+      "reviewsCount": 3100,
+      "stock": 35,
+      "image": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=600&q=80",
+      "description": "Infused with olive oil and winter cherry to improve skin tone and strengthen baby's bone structure.",
+      "features": [
+        "Olive oil & Winter Cherry",
+        "Light and non-staining",
+        "Clinically tested gentle"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "bp-5",
+      "name": "Nestlé Cerelac Fortified Baby Cereal with Milk (Stage 1)",
+      "category": "Baby Products",
+      "price": 265,
+      "mrp": 290,
+      "unit": "300 g Bib Box",
+      "rating": 4.9,
+      "reviewsCount": 5800,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=600&q=80",
+      "description": "Wheat apple fortified complementary food for infants from 6 to 24 months, rich in iron.",
+      "features": [
+        "Contains Iron, Zinc & Vit A, C",
+        "Made with 100% natural grains",
+        "Easy to prepare porridge"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "fv-1",
+      "name": "Fresh Hybrid Red Tomatoes (Tamatar)",
+      "category": "Fruits & Vegetables",
+      "price": 36,
+      "mrp": 45,
+      "unit": "1 kg",
+      "rating": 4.7,
+      "reviewsCount": 4900,
+      "stock": 120,
+      "image": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80",
+      "description": "Firm, glossy red farm-fresh hybrid tomatoes packed with rich lycopene and tangy juiciness.",
+      "features": [
+        "Harvested this morning",
+        "Firm texture for cooking & salads",
+        "No artificial ripening"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "fv-2",
+      "name": "Fresh Nasik Red Onions (Pyaz)",
+      "category": "Fruits & Vegetables",
+      "price": 42,
+      "mrp": 55,
+      "unit": "1 kg",
+      "rating": 4.8,
+      "reviewsCount": 6200,
+      "stock": 150,
+      "image": "https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?auto=format&fit=crop&w=600&q=80",
+      "description": "Crisp and pungent high quality Nasik onions, the essential base for all Indian curries and gravies.",
+      "features": [
+        "Pungent aroma",
+        "Uniform medium size bulbs",
+        "Dry clean outer skin"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "fv-3",
+      "name": "Fresh Regular Potatoes (Aloo)",
+      "category": "Fruits & Vegetables",
+      "price": 32,
+      "mrp": 40,
+      "unit": "1 kg",
+      "rating": 4.8,
+      "reviewsCount": 7100,
+      "stock": 160,
+      "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80",
+      "description": "Unwashed earthen potatoes with firm flesh, great for boiling, roasting, and making aloo parathas.",
+      "features": [
+        "Even cooking",
+        "Non-sweet variety",
+        "Ideal for daily dishes & frying"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "fv-4",
+      "name": "Fresh Garlic (Lahsun) - Whole Bulbs",
+      "category": "Fruits & Vegetables",
+      "price": 65,
+      "mrp": 80,
+      "unit": "250 g",
+      "rating": 4.6,
+      "reviewsCount": 2200,
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?auto=format&fit=crop&w=600&q=80",
+      "description": "Firm, aromatic dry garlic pods with pungent cloves that bring depth to every tadka and paste.",
+      "features": [
+        "Pungent aroma",
+        "Easy to peel cloves",
+        "Farm sourced"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "fv-5",
+      "name": "Fresh Green Chillies (Hari Mirch)",
+      "category": "Fruits & Vegetables",
+      "price": 18,
+      "mrp": 25,
+      "unit": "100 g",
+      "rating": 4.7,
+      "reviewsCount": 3100,
+      "stock": 75,
+      "image": "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&w=600&q=80",
+      "description": "Crisp, spicy Indian green chillies handpicked for intense aroma and heat in curries.",
+      "features": [
+        "Crisp snap",
+        "Authentic pungent heat",
+        "Pre-sorted clean stems"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "fv-6",
+      "name": "Fresh Juicy Lemons (Nimbu)",
+      "category": "Fruits & Vegetables",
+      "price": 25,
+      "mrp": 35,
+      "unit": "Pack of 4 (approx 150g)",
+      "rating": 4.8,
+      "reviewsCount": 3800,
+      "stock": 90,
+      "image": "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?auto=format&fit=crop&w=600&q=80",
+      "description": "Thin-skinned golden juicy lemons bursting with tangy juice for salads, marinades, and lemonade.",
+      "features": [
+        "Thin skin for extra juice",
+        "Natural Vitamin C booster",
+        "Handpicked fresh"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "fv-7",
+      "name": "Fresh Coriander Bunch (Dhaniya Patta)",
+      "category": "Fruits & Vegetables",
+      "price": 15,
+      "mrp": 20,
+      "unit": "100 g Bunch",
+      "rating": 4.8,
+      "reviewsCount": 4200,
+      "stock": 80,
+      "image": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+      "description": "Fragrant dark green coriander leaves, freshly picked to garnish and aroma-boost every dish.",
+      "features": [
+        "Intense fresh aroma",
+        "Crisp tender stems",
+        "Hydration-wrapped freshness"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "fv-8",
+      "name": "Fresh Shimla Royal Delicious Apples",
+      "category": "Fruits & Vegetables",
+      "price": 145,
+      "mrp": 185,
+      "unit": "4 pcs (approx 600g)",
+      "rating": 4.8,
+      "reviewsCount": 2900,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=600&q=80",
+      "description": "Crisp, sweet and juicy Himalayan apples with glowing natural red skin and dense crunch.",
+      "features": [
+        "Naturally sweet & crunchy",
+        "Rich in dietary fiber",
+        "Wax-free natural harvest"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "fv-9",
+      "name": "Fresh Robusta Bananas (Kela)",
+      "category": "Fruits & Vegetables",
+      "price": 48,
+      "mrp": 60,
+      "unit": "1 Dozen (approx 1.2 kg)",
+      "rating": 4.8,
+      "reviewsCount": 5400,
+      "stock": 80,
+      "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=600&q=80",
+      "description": "Naturally ripened sweet bananas packed with potassium and instant energy for your day.",
+      "features": [
+        "Naturally carbide-free ripened",
+        "Rich in potassium",
+        "Sweet creamy pulp"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "pe-1",
+      "name": "Cycle Pure Agarbatti (Lia Incense Sticks Pack of 3)",
+      "category": "Pooja / Religious Essentials",
+      "price": 135,
+      "mrp": 165,
+      "unit": "Pack of 3 (120 Sticks each)",
+      "rating": 4.9,
+      "reviewsCount": 5200,
+      "stock": 65,
+      "image": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=600&q=80",
+      "description": "Enchanting traditional fragrance that calms the senses and purifies your prayer sanctuary.",
+      "features": [
+        "Long-lasting fragrance",
+        "Low smoke emission",
+        "Handcrafted natural aroma oils"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "pe-2",
+      "name": "Mangalam 100% Pure Camphor (Kapur) Tablets",
+      "category": "Pooja / Religious Essentials",
+      "price": 165,
+      "mrp": 200,
+      "unit": "100 g Jar",
+      "rating": 4.9,
+      "reviewsCount": 4600,
+      "stock": 55,
+      "image": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=600&q=80",
+      "description": "Burns completely without leaving any black residue, spreading an uplifting sacred scent.",
+      "features": [
+        "Leaves zero ash residue",
+        "100% pure bhimseni camphor",
+        "Positive sacred vibrations"
+      ],
+      "isBestSeller": true
+    },
+    {
+      "id": "pe-3",
+      "name": "Pure Cotton Flower Wicks (Phool Batti for Diya)",
+      "category": "Pooja / Religious Essentials",
+      "price": 45,
+      "mrp": 60,
+      "unit": "Pack of 100 Wicks",
+      "rating": 4.8,
+      "reviewsCount": 3100,
+      "stock": 80,
+      "image": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=600&q=80",
+      "description": "Fluffy pure cotton round wicks that absorb oil/ghee evenly and burn steadily for hours.",
+      "features": [
+        "100% pure organic cotton",
+        "Steady flicker-free flame",
+        "Pre-shaped round flower battis"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "pe-4",
+      "name": "Puja Sesame / Til Oil for Deepam Diya",
+      "category": "Pooja / Religious Essentials",
+      "price": 145,
+      "mrp": 180,
+      "unit": "1 L Bottle",
+      "rating": 4.7,
+      "reviewsCount": 1800,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80",
+      "description": "Specially formulated fragrant lamp oil blended with 5 divine oils for daily pooja aarti.",
+      "features": [
+        "Bright illuminating flame",
+        "Pleasant holy aroma",
+        "Long continuous burning"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "pe-5",
+      "name": "Patanjali Shuddha Roli Kumkum & Chandan Tilak",
+      "category": "Pooja / Religious Essentials",
+      "price": 40,
+      "mrp": 50,
+      "unit": "50 g + 50 g Twin Pack",
+      "rating": 4.8,
+      "reviewsCount": 2200,
+      "stock": 70,
+      "image": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=600&q=80",
+      "description": "Pure turmeric-derived auspicious kumkum and aromatic sandalwood paste for tilak rituals.",
+      "features": [
+        "Skin safe herbal ingredients",
+        "Natural cooling chandan",
+        "Vibrant sacred red hue"
+      ],
+      "isBestSeller": false
+    },
+    {
+      "id": "pe-6",
+      "name": "Shri Gangajal Holy Water Bottle (Direct from Haridwar)",
+      "category": "Pooja / Religious Essentials",
+      "price": 35,
+      "mrp": 45,
+      "unit": "500 ml Sealed Bottle",
+      "rating": 4.9,
+      "reviewsCount": 3400,
+      "stock": 90,
+      "image": "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80",
+      "description": "Sacred sealed Ganges water packed directly at Haridwar for holy cleansing rituals and pooja.",
+      "features": [
+        "Hermetically sealed at source",
+        "Retains purity for years",
+        "Essential for religious ceremonies"
+      ],
+      "isBestSeller": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "DNS-98421",
+      "customer": {
+        "name": "Meher Abinash",
+        "phone": "+91 98765 43210",
+        "email": "abinash@example.com",
+        "address": "Flat 402, Royal Palms, Patia, Infocity Road",
+        "city": "Bhubaneswar",
+        "pincode": "751024"
+      },
+      "items": [
+        {
+          "id": "rg-1",
+          "name": "Fortune Rozana Super Basmati Rice",
+          "price": 135,
+          "quantity": 2,
+          "unit": "1 kg"
+        },
+        {
+          "id": "og-6",
+          "name": "Amul Pure Desi Ghee Tin",
+          "price": 595,
+          "quantity": 1,
+          "unit": "1 L"
+        },
+        {
+          "id": "dr-1",
+          "name": "Amul Taaza Homogenised Toned Milk Pouch",
+          "price": 27,
+          "quantity": 4,
+          "unit": "500 ml"
+        }
+      ],
+      "subtotal": 973,
+      "deliveryFee": 0,
+      "discount": 50,
+      "total": 923,
+      "paymentMethod": "UPI",
+      "deliverySlot": "Express (15 Mins)",
+      "status": "Out for Delivery",
+      "createdAt": "2026-10-16T20:25:00.000Z",
+      "deliveryOtp": "4829"
+    },
+    {
+      "id": "DNS-98418",
+      "customer": {
+        "name": "Pooja Sharma",
+        "phone": "+91 98111 22334",
+        "email": "pooja.sharma@example.com",
+        "address": "House 18, Green Valley Avenue, Jayadev Vihar",
+        "city": "Bhubaneswar",
+        "pincode": "751013"
+      },
+      "items": [
+        {
+          "id": "af-1",
+          "name": "Aashirvaad Superior MP Sharbati Atta",
+          "price": 260,
+          "quantity": 1,
+          "unit": "5 kg"
+        },
+        {
+          "id": "dp-1",
+          "name": "Tata Sampann Unpolished Toor / Arhar Dal",
+          "price": 172,
+          "quantity": 2,
+          "unit": "1 kg"
+        },
+        {
+          "id": "sm-1",
+          "name": "Tata Salt Vacuum Evaporated Iodised Salt",
+          "price": 28,
+          "quantity": 1,
+          "unit": "1 kg"
+        }
+      ],
+      "subtotal": 632,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 647,
+      "paymentMethod": "Credit Card",
+      "deliverySlot": "Evening (6:00 PM - 8:00 PM)",
+      "status": "Confirmed",
+      "createdAt": "2026-10-16T19:40:00.000Z",
+      "deliveryOtp": "6318"
+    },
+    {
+      "id": "DNS-98390",
+      "customer": {
+        "name": "Rohan Varma",
+        "phone": "+91 97780 99887",
+        "email": "rohan.v@example.com",
+        "address": "Tower B, Apt 901, DLF Cybercity",
+        "city": "Bhubaneswar",
+        "pincode": "751024"
+      },
+      "items": [
+        {
+          "id": "br-1",
+          "name": "Maggi 2-Minute Masala Instant Noodles",
+          "price": 155,
+          "quantity": 2,
+          "unit": "840 g"
+        },
+        {
+          "id": "bs-6",
+          "name": "Cadbury Dairy Milk Silk Chocolate Bar",
+          "price": 165,
+          "quantity": 3,
+          "unit": "150 g"
+        },
+        {
+          "id": "tcb-4",
+          "name": "Nescafé Classic 100% Pure Instant Coffee",
+          "price": 330,
+          "quantity": 1,
+          "unit": "100 g Glass Jar"
+        }
+      ],
+      "subtotal": 1135,
+      "deliveryFee": 0,
+      "discount": 100,
+      "total": 1035,
+      "paymentMethod": "Cash on Delivery",
+      "deliverySlot": "Morning (7:00 AM - 9:00 AM)",
+      "status": "Delivered",
+      "createdAt": "2026-10-16T17:15:00.000Z",
+      "deliveryOtp": "9041"
+    }
+  ],
+  "stats": {
+    "totalVisits": 157,
+    "totalLogins": 43,
+    "lastVisit": "2026-10-17T09:20:37.255Z"
+  },
+  "securityLogs": [
+    {
+      "id": "sec-1792228831813-463",
+      "event": "CUSTOMER_LOGIN_SUCCESS",
+      "email": "abinash@example.com",
+      "ip": "127.0.0.1 (Localhost)",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/15",
+      "status": "SUCCESS",
+      "details": "256-bit session token generated",
+      "timestamp": "2026-10-17T09:20:31.813Z"
+    },
+    {
+      "id": "sec-1792228478005-628",
+      "event": "CUSTOMER_LOGIN_SUCCESS",
+      "email": "abinash@example.com",
+      "ip": "127.0.0.1 (Localhost)",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/15",
+      "status": "SUCCESS",
+      "details": "256-bit session token generated",
+      "timestamp": "2026-10-17T09:14:38.005Z"
+    },
+    {
+      "id": "sec-1792228439767-811",
+      "event": "ADMIN_VAULT_AUTHORIZED",
+      "email": "admin@dailyneeds.com",
+      "ip": "127.0.0.1 (Localhost)",
+      "userAgent": "node",
+      "status": "SUCCESS",
+      "details": "Full Administrative Clearance with 2FA",
+      "timestamp": "2026-10-17T09:13:59.767Z"
+    },
+    {
+      "id": "sec-1792228423588-177",
+      "event": "ADMIN_2FA_CHALLENGE",
+      "email": "admin@dailyneeds.com",
+      "ip": "127.0.0.1 (Localhost)",
+      "userAgent": "node",
+      "status": "CHALLENGE_REQUIRED",
+      "details": "Awaiting 6-digit 2FA Key",
+      "timestamp": "2026-10-17T09:13:43.588Z"
+    },
+    {
+      "id": "sec-init-1",
+      "event": "FIREWALL_ARMED",
+      "email": "system@dailyneeds.com",
+      "ip": "127.0.0.1 (Localhost)",
+      "userAgent": "Server Internal Security Daemon",
+      "status": "SUCCESS",
+      "details": "256-Bit SSL Gateway & Rate Limiter Initialized",
+      "timestamp": "2026-10-17T09:09:23.411Z"
+    }
+  ]
+}
